@@ -1,6 +1,6 @@
 import csv
 
-with open('csvAlistirmalari\\isim.csv','r',newline='') as file:
+with open('csv\\isim.csv','r',newline='') as file:
     fileEncoding="UTF-8-BOM"
     okuma=csv.reader(file)
     satirlar=list(okuma)
@@ -11,7 +11,7 @@ with open('csvAlistirmalari\\isim.csv','r',newline='') as file:
         satir[0]=birlesmis
         del satir[2]
         del satir[3]
-    with open('csvAlistirmalari\\isim_duzenlenmis.csv','w',newline='') as file1:
+    with open('csv\\isim_duzenlenmis.csv','w',newline='') as file1:
         yazici=csv.writer(file1)
         yazici.writerows(satirlar)
         
