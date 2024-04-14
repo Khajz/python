@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r'C:\Kodlarz\Python\VeriMadencilik\sports_data.csv') #CSV'nin okunması
+df = pd.read_csv(r'\veri_madenciligi\sports_data.csv') #CSV'nin okunması
 
 calort = df["Calories"].mean() #Kalorilerin ortalamasını alıp bunu bir değişkene atadık
 df['Calories'].fillna(calort,inplace=True) #Kalorideki boş olan değerlere diğerlerinin ortalamasını yazdık
