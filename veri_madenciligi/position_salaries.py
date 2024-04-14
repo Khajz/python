@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy
 from sklearn.metrics import r2_score
 
-ps = pd.read_csv(r'C:\Kodlarz\PythonCV\veri_madenciligi\position_salaries.csv', header=0, sep=",") #CSV'nin okunması
+ps = pd.read_csv(r'\veri_madenciligi\position_salaries.csv', header=0, sep=",") #CSV'nin okunması
 
 x=ps['Level'] #Pozisyon-Level ilişkisi x değişkenine atandı
 y=ps['Salary'] #Maaş y değişkenine atandı
