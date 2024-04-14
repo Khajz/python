@@ -115,7 +115,7 @@ while True:
                 fahr_kelv()
                 break
             elif secim=='4':
-                celc_kelv
+                celc_kelv()
                 break
             else:
                 secim=input("Yanlış seçtiniz, tekrar deneyin! (1/2/3/4): ")
