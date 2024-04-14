@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-health_data = pd.read_csv(r'C:\Kodlarz\PythonCV\veri_madenciligi\health_data.csv', header=0, sep=";") #CSV okunması
+health_data = pd.read_csv(r'veri_madenciligi\health_data.csv', header=0, sep=";") #CSV okunması
 
 health_data.dropna(axis=0,inplace=True) #Boş değerler silindi
 
