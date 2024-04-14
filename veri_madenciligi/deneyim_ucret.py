@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy
 from sklearn.metrics import r2_score
 
-du = pd.read_csv(r'C:\Kodlarz\PythonCV\veri_madenciligi\deneyim_ucret.csv', header=0, sep=";") #CSV'nin okunması
+du = pd.read_csv(r'veri_madenciligi\deneyim_ucret.csv', header=0, sep=";") #CSV'nin okunması
 
 x = du['Deneyim'] #Deneyim yılları x değişkenine atandı
 y = du['Ucret'] #Ücret y değişkenine atandı
