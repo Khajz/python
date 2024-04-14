@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-veriler = pd.read_csv(r'C:\Kodlarz\Python\VeriMadencilik\satislar.csv') #CSV okundu
+veriler = pd.read_csv(r'veri_madenciligi\satislar.csv') #CSV okundu
 aylar=veriler[['Aylar']] #Aylar değişkenine CSV'deki Aylar sütunu atandı
 satislar=veriler[['Satislar']] #Satışlar değişkenine CSV'deki Satislar sütunu atandı
 
