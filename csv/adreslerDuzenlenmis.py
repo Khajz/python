@@ -1,5 +1,5 @@
 import csv
-with open('csvAlistirmalari\\adresler.csv','r',newline='') as file:
+with open('csv\\adresler.csv','r',newline='') as file:
     okuma=csv.reader(file)
     satirlar=list(okuma)
     
@@ -8,7 +8,7 @@ with open('csvAlistirmalari\\adresler.csv','r',newline='') as file:
         satir[4]=birlesmis
         del satir[5]
     
-    with open('csvAlistirmalari\\adresler_duzenlenmis.csv','a',newline='') as file1:
+    with open('csv\\adresler_duzenlenmis.csv','a',newline='') as file1:
         yazici=csv.writer(file1)
         yazici.writerow(['İsim','Soyisim','Adres','İl','İlçe-PK'])
         yazici.writerows(satirlar)
